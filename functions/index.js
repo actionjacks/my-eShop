@@ -6,29 +6,31 @@ const stripe = require("stripe")(
 );
 //command for testing firebase backend
 //         firebase emulators:start
-//API
-
-//App config
+// - App config
 const app = express();
 
-//Middlewares
+// - Middlewares
 app.use(cors({ origin: true }));
 app.use(express.json());
 
-//APIroutes
+// - API routes
 app.get("/", (request, response) => response.status(200).send("hello world"));
-app.post("/payments.create", async (request, response) => {
+
+app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
-  console.log("payment", total);
+
+  console.log("Payment Request Recieved BOOM!!! for this amount >>> ", total);
 
   const paymentIntent = await stripe.paymentIntents.create({
-    amount: total,
-    currency: "pln",
+    amount: total, // subunits of the currency
+    currency: "usd",
   });
+
+  // OK - Created
   response.status(201).send({
     clientSecret: paymentIntent.client_secret,
   });
 });
 
-//Listen command
+// - Listen command
 exports.api = functions.https.onRequest(app);
