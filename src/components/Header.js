@@ -39,10 +39,12 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="header__option">
-          <span className="header__optionLineOne">returns</span>
-          <span className="header__optionLineTwo">orders</span>
-        </div>
+        <Link to="/orders">
+          <div className="header__option">
+            <span className="header__optionLineOne">returns</span>
+            <span className="header__optionLineTwo">orders</span>
+          </div>
+        </Link>
         <div className="header__option">
           <span className="header__optionLineOne">tour</span>
           <span className="header__optionLineTwo">smart</span>
@@ -61,4 +63,3 @@ function Header() {
 }
 
 export default Header;
-
