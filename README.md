@@ -14,3 +14,6 @@
 > firebase deploy --only functions
 > firebase deploy --only hosting
 
+# test 
+jacek@mail.com
+UZm7AxbPQcbf!r2
