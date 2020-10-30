@@ -12,3 +12,5 @@
 
 > deploy when functions(functions folder !!!!!)
 > firebase deploy --only functions
+> firebase deploy --only hosting
+
