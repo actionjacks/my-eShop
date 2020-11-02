@@ -1,6 +1,6 @@
 
 
-![Image of Amazon wall](https://static.politico.com/dims4/default/baf20fd/2147483647/resize/1160x%3E/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F3e%2F87%2F5f4c5abc41d1946b754aa3c5090d%2Fapamazon.jpg)
+![Image of Amazon wall](https://www.marketplace.org/wp-content/uploads/2019/07/ama2.png?resize=740%2C204)
 
 # Your card doesn't support automatic recurring payments [QR-CC3ST-02] :(
 
